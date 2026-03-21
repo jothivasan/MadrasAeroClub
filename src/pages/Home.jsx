@@ -172,125 +172,115 @@ const Home = () => {
               transition={{ duration: 0.8 }}
               className="text-4xl md:text-5xl lg:text-6xl font-display font-light text-mac-primary tracking-tight leading-[1.1]"
             >
-              We aim to bridge the <span className="font-serif italic text-mac-accent">gap between:</span>
+              We aim to bridge the{" "}
+              <span className="font-serif italic text-mac-accent">
+                gap between:
+              </span>
             </motion.h2>
           </div>
           <motion.p
-            initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }} transition={{ delay: 0.3 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3 }}
             className="text-mac-muted font-light max-w-md text-sm md:text-base mb-2 md:mb-4"
           >
-            Madras Aero Club isn't just about building aircraft; it's about building the minds that will command the future of aviation.
+            Madras Aero Club isn't just about building aircraft; it's about
+            building the minds that will command the future of aviation.
           </motion.p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Card 1 */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.1 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.1 }}
             className="group relative bg-[#FAFAFA] border border-mac-border/40 hover:bg-white transition-colors duration-500 overflow-hidden flex flex-col shadow-sm hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)]"
           >
             <div className="w-full h-56 md:h-64 overflow-hidden relative transition-all duration-700 bg-mac-accent/5 border-b border-mac-border/20 flex items-center justify-center">
-               <div className="font-mono text-[10px] tracking-[0.2em] text-mac-accent/40 uppercase relative z-10 transition-transform duration-700 group-hover:scale-110">[ Image Placeholder 01 ]</div>
+              <div className="font-mono text-[10px] tracking-[0.2em] text-mac-accent/40 uppercase relative z-10 transition-transform duration-700 group-hover:scale-110">
+                [ Image Placeholder 01 ]
+              </div>
             </div>
             <div className="p-8 pb-10 flex-grow relative">
               <h3 className="text-2xl font-display font-bold text-mac-primary mb-4 leading-tight relative mt-2">
-                Theory <span className="italic font-serif font-light text-mac-accent">&</span> Application
+                Theory{" "}
+                <span className="italic font-serif font-light text-mac-accent">
+                  &
+                </span>{" "}
+                Application
               </h3>
               <p className="text-sm text-mac-muted font-light leading-relaxed">
-                Aerodynamic principles are immediately tested in physical prototypes and strict stress simulations.
+                Aerodynamic principles are immediately tested in physical
+                prototypes and strict stress simulations.
               </p>
             </div>
             <div className="px-8 pb-8 mt-auto">
-               <div className="w-12 h-[1px] bg-mac-border/60 group-hover:bg-mac-accent group-hover:w-full transition-all duration-700"></div>
+              <div className="w-12 h-[1px] bg-mac-border/60 group-hover:bg-mac-accent group-hover:w-full transition-all duration-700"></div>
             </div>
           </motion.div>
 
           {/* Card 2 */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.2 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
             className="group relative bg-[#FAFAFA] border border-mac-border/40 hover:bg-white transition-colors duration-500 overflow-hidden flex flex-col shadow-sm hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)]"
           >
             <div className="w-full h-56 md:h-64 overflow-hidden relative transition-all duration-700 bg-mac-accent/5 border-b border-mac-border/20 flex items-center justify-center">
-               <div className="font-mono text-[10px] tracking-[0.2em] text-mac-accent/40 uppercase relative z-10 transition-transform duration-700 group-hover:scale-110">[ Image Placeholder 02 ]</div>
+              <div className="font-mono text-[10px] tracking-[0.2em] text-mac-accent/40 uppercase relative z-10 transition-transform duration-700 group-hover:scale-110">
+                [ Image Placeholder 02 ]
+              </div>
             </div>
             <div className="p-8 pb-10 flex-grow relative">
               <h3 className="text-2xl font-display font-bold text-mac-primary mb-4 leading-tight relative mt-2">
-                Learning <span className="italic font-serif font-light text-mac-accent">&</span> Doing
+                Learning{" "}
+                <span className="italic font-serif font-light text-mac-accent">
+                  &
+                </span>{" "}
+                Doing
               </h3>
               <p className="text-sm text-mac-muted font-light leading-relaxed">
-                To us, knowledge without execution is incomplete. Construct industrial-grade UAVs from day one.
+                To us, knowledge without execution is incomplete. Construct
+                industrial-grade UAVs from day one.
               </p>
             </div>
             <div className="px-8 pb-8 mt-auto">
-               <div className="w-12 h-[1px] bg-mac-border/60 group-hover:bg-mac-accent group-hover:w-full transition-all duration-700"></div>
+              <div className="w-12 h-[1px] bg-mac-border/60 group-hover:bg-mac-accent group-hover:w-full transition-all duration-700"></div>
             </div>
           </motion.div>
 
           {/* Card 3 */}
           <motion.div
-            initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6, delay: 0.3 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
             className="group relative bg-[#FAFAFA] border border-mac-border/40 hover:bg-white transition-colors duration-500 overflow-hidden flex flex-col shadow-sm hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)]"
           >
             <div className="w-full h-56 md:h-64 overflow-hidden relative transition-all duration-700 bg-mac-accent/5 border-b border-mac-border/20 flex items-center justify-center">
-               <div className="font-mono text-[10px] tracking-[0.2em] text-mac-accent/40 uppercase relative z-10 transition-transform duration-700 group-hover:scale-110">[ Image Placeholder 03 ]</div>
+              <div className="font-mono text-[10px] tracking-[0.2em] text-mac-accent/40 uppercase relative z-10 transition-transform duration-700 group-hover:scale-110">
+                [ Image Placeholder 03 ]
+              </div>
             </div>
             <div className="p-8 pb-10 flex-grow relative">
               <h3 className="text-2xl font-display font-bold text-mac-primary mb-4 leading-tight relative mt-2">
-                Curiosity <span className="italic font-serif font-light text-mac-accent">&</span> Innovation
+                Curiosity{" "}
+                <span className="italic font-serif font-light text-mac-accent">
+                  &
+                </span>{" "}
+                Innovation
               </h3>
               <p className="text-sm text-mac-muted font-light leading-relaxed">
-                The future of flight isn't found in textbooks; it's discovered through relentless lab experimentation.
+                The future of flight isn't found in textbooks; it's discovered
+                through relentless lab experimentation.
               </p>
             </div>
             <div className="px-8 pb-8 mt-auto">
-               <div className="w-12 h-[1px] bg-mac-border/60 group-hover:bg-mac-accent group-hover:w-full transition-all duration-700"></div>
-            </div>
-          </motion.div>
-
-        </div>
-      </section>
-
-      {/* 
-        ========================================
-        3. QUOTE SECTION
-        ========================================
-      */}
-      <section className="py-24 px-6 bg-mac-surfaceDark text-mac-primary relative z-10 border-b border-mac-border/50">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="text-3xl md:text-5xl font-display font-bold mb-10 text-mac-primary leading-tight">
-              "Aviation is not just a subject — <br/><span className="text-mac-accent">it’s a discipline.</span>"
-            </p>
-            <div className="w-px h-16 bg-mac-border mx-auto mb-10" />
-            <p className="text-mac-muted font-semibold tracking-wider text-xs uppercase mb-10">
-              We train professionals to:
-            </p>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
-              <div className="text-lg font-sans text-mac-muted">
-                Think like <br />
-                <span className="font-bold font-display text-mac-primary text-xl mt-1 block">
-                  Engineers
-                </span>
-              </div>
-              <div className="w-1.5 h-1.5 bg-mac-accent rounded-full hidden md:block"></div>
-              <div className="text-lg font-sans text-mac-muted">
-                Solve like <br />
-                <span className="font-bold font-display text-mac-primary text-xl mt-1 block">
-                  Innovators
-                </span>
-              </div>
-              <div className="w-1.5 h-1.5 bg-mac-accent rounded-full hidden md:block"></div>
-              <div className="text-lg font-sans text-mac-muted">
-                Execute like <br />
-                <span className="font-bold font-display text-mac-primary text-xl mt-1 block">
-                  Aviators
-                </span>
-              </div>
+              <div className="w-12 h-[1px] bg-mac-border/60 group-hover:bg-mac-accent group-hover:w-full transition-all duration-700"></div>
             </div>
           </motion.div>
         </div>
@@ -301,7 +291,7 @@ const Home = () => {
         7. CALL TO ACTION 
         ========================================
       */}
-      <section className="py-40 px-6 relative flex flex-col items-center justify-center text-center overflow-hidden z-20">
+      <section className="py-24 px-6 relative flex flex-col items-center justify-center text-center overflow-hidden z-20  bg-mac-surfaceDark">
         {/* Soft background ambient glow */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-mac-accent/15 rounded-full blur-[120px] pointer-events-none -z-10"></div>
 
@@ -328,12 +318,6 @@ const Home = () => {
               className="px-12 py-5 bg-mac-accent text-white font-sans font-bold text-xs uppercase tracking-widest shadow-xl hover:shadow-mac-accent/30 hover:-translate-y-1 transition-all"
             >
               Join the Club
-            </Link>
-            <Link
-              to="/contact"
-              className="px-12 py-5 bg-transparent border border-mac-border text-mac-primary font-sans font-bold text-xs uppercase tracking-widest hover:bg-black/5 transition-all"
-            >
-              Contact Us
             </Link>
           </div>
         </motion.div>

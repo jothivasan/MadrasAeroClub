@@ -86,14 +86,14 @@ const Navbar = () => {
         </nav>
 
         <div className="hidden md:block">
-          <button className={clsx(
-            "px-7 py-2.5 font-slab text-[1.05rem] font-bold tracking-wider rounded-full transition-all shadow-lg",
+          <NavLink to="/contact" className={clsx(
+            "px-7 py-2.5 font-slab text-[1.05rem] font-bold tracking-wider rounded-full transition-all shadow-lg inline-block",
             useDarkText 
               ? "bg-mac-primary text-white shadow-mac-primary/20 hover:bg-mac-accent" 
               : "bg-mac-accent text-mac-primary shadow-mac-accent/20 hover:bg-white"
           )}>
             Join the Club
-          </button>
+          </NavLink>
         </div>
 
         {/* Mobile Toggle */}
@@ -136,12 +136,12 @@ const Navbar = () => {
             </NavLink>
           ))}
           <div className="pt-4 pb-2">
-            <button className={clsx(
-              "w-full py-3 font-slab text-[1.15rem] font-bold tracking-wider rounded-lg shadow-lg",
+            <NavLink to="/contact" className={clsx(
+              "w-full py-3 font-slab text-[1.15rem] font-bold tracking-wider rounded-lg shadow-lg block text-center",
               useDarkText ? "bg-mac-primary text-white" : "bg-mac-accent text-mac-primary"
             )}>
               Join the Club
-            </button>
+            </NavLink>
           </div>
         </div>
       </div>
