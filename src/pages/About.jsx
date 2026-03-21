@@ -1,6 +1,10 @@
 import { motion } from "framer-motion";
+import SplitText from "../components/SplitText";
 
 const About = () => {
+  const handleAnimationComplete = () => {
+    console.log('All letters have animated!');
+  };
   return (
     <div className="bg-mac-bg text-mac-text pb-32">
       {/* Hero Section */}
@@ -20,9 +24,36 @@ const About = () => {
             <span className="text-mac-accent font-sans font-semibold tracking-[0.2em] uppercase text-xs mb-8 block">
                Our Heritage
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light mb-8 text-mac-primary leading-[1.05] tracking-tight">
-               Reimagining <br />
-               <span className="italic text-mac-accent font-serif">Flight Training.</span>
+            <h1 className="mb-8">
+               <SplitText
+                 text="Reimagining "
+                 className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light text-mac-primary leading-[1.05] tracking-tight"
+                 delay={60}
+                 duration={1.2}
+                 ease="power3.out"
+                 splitType="chars"
+                 from={{ opacity: 0, y: 40 }}
+                 to={{ opacity: 1, y: 0 }}
+                 threshold={0.1}
+                 rootMargin="-100px"
+                 textAlign="left"
+               />
+               <br />
+               <SplitText
+                 text="Flight Training."
+                 className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light italic text-mac-accent font-serif leading-[1.05] tracking-tight"
+                 delay={60}
+                 duration={1.2}
+                 ease="power3.out"
+                 splitType="chars"
+                 from={{ opacity: 0, y: 40 }}
+                 to={{ opacity: 1, y: 0 }}
+                 threshold={0.1}
+                 rootMargin="-100px"
+                 textAlign="left"
+                 onLetterAnimationComplete={handleAnimationComplete}
+                 showCallback={true}
+               />
             </h1>
           </div>
           <div className="md:w-1/3 pb-2">
@@ -112,47 +143,7 @@ const About = () => {
         </motion.div>
       </section>
 
-      {/* Quote Section */}
-      <section className="py-24 px-6 bg-mac-surfaceDark text-mac-primary">
-        <div className="max-w-4xl mx-auto text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="text-3xl md:text-5xl font-display font-bold mb-10 text-mac-primary leading-tight">
-              "Aviation is not just a subject — <br/><span className="text-mac-accent">it’s a discipline.</span>"
-            </p>
-            <div className="w-px h-16 bg-mac-border mx-auto mb-10" />
-            <p className="text-mac-muted font-semibold tracking-wider text-xs uppercase mb-10">
-              We train professionals to:
-            </p>
-            <div className="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-16">
-              <div className="text-lg font-sans text-mac-muted">
-                Think like <br />
-                <span className="font-bold font-display text-mac-primary text-xl mt-1 block">
-                  Engineers
-                </span>
-              </div>
-              <div className="w-1.5 h-1.5 bg-mac-accent rounded-full hidden md:block"></div>
-              <div className="text-lg font-sans text-mac-muted">
-                Solve like <br />
-                <span className="font-bold font-display text-mac-primary text-xl mt-1 block">
-                  Innovators
-                </span>
-              </div>
-              <div className="w-1.5 h-1.5 bg-mac-accent rounded-full hidden md:block"></div>
-              <div className="text-lg font-sans text-mac-muted">
-                Execute like <br />
-                <span className="font-bold font-display text-mac-primary text-xl mt-1 block">
-                  Aviators
-                </span>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+
     </div>
   );
 };

@@ -1,7 +1,11 @@
 import { Camera, Flag, PlaneTakeoff } from "lucide-react";
 import { motion } from "framer-motion";
+import SplitText from "../components/SplitText";
 
 const Events = () => {
+  const handleAnimationComplete = () => {
+    console.log('All letters have animated!');
+  };
   return (
     <div className="bg-mac-bg text-mac-text pb-32">
       <section className="min-h-screen pt-32 pb-24 px-6 md:px-12 flex items-center bg-[#FAFAFA] border-b border-mac-border relative overflow-hidden">
@@ -20,9 +24,36 @@ const Events = () => {
             <span className="text-mac-accent font-sans font-semibold tracking-[0.2em] uppercase text-xs mb-8 block">
                Aerial Experiences
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light mb-8 text-mac-primary leading-[1.05] tracking-tight">
-               The Sky is our <br />
-               <span className="italic text-mac-accent font-serif">Canvas.</span>
+            <h1 className="mb-8">
+               <SplitText
+                 text="The Sky is our "
+                 className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light text-mac-primary leading-[1.05] tracking-tight"
+                 delay={60}
+                 duration={1.2}
+                 ease="power3.out"
+                 splitType="chars"
+                 from={{ opacity: 0, y: 40 }}
+                 to={{ opacity: 1, y: 0 }}
+                 threshold={0.1}
+                 rootMargin="-100px"
+                 textAlign="left"
+               />
+               <br />
+               <SplitText
+                 text="Canvas."
+                 className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light italic text-mac-accent font-serif leading-[1.05] tracking-tight"
+                 delay={60}
+                 duration={1.2}
+                 ease="power3.out"
+                 splitType="chars"
+                 from={{ opacity: 0, y: 40 }}
+                 to={{ opacity: 1, y: 0 }}
+                 threshold={0.1}
+                 rootMargin="-100px"
+                 textAlign="left"
+                 onLetterAnimationComplete={handleAnimationComplete}
+                 showCallback={true}
+               />
             </h1>
           </div>
           <div className="md:w-1/3 pb-2">

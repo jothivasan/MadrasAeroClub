@@ -1,8 +1,12 @@
 import { Sprout, Map, Video, ShieldCheck, Compass, CloudLightning } from "lucide-react";
 import { motion } from "framer-motion";
+import SplitText from "../components/SplitText";
 import { Link } from "react-router-dom";
 
 const Services = () => {
+  const handleAnimationComplete = () => {
+    console.log('All letters have animated!');
+  };
   return (
     <div className="bg-mac-bg text-mac-text pb-32">
       {/* Header */}
@@ -22,9 +26,36 @@ const Services = () => {
             <span className="text-mac-accent font-sans font-semibold tracking-[0.2em] uppercase text-xs mb-8 block">
                Commercial Solutions
             </span>
-            <h1 className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light mb-8 text-mac-primary leading-[1.05] tracking-tight">
-               Technology That <br />
-               <span className="italic text-mac-accent font-serif">Commands.</span>
+            <h1 className="mb-8">
+               <SplitText
+                 text="Technology That "
+                 className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light text-mac-primary leading-[1.05] tracking-tight"
+                 delay={60}
+                 duration={1.2}
+                 ease="power3.out"
+                 splitType="chars"
+                 from={{ opacity: 0, y: 40 }}
+                 to={{ opacity: 1, y: 0 }}
+                 threshold={0.1}
+                 rootMargin="-100px"
+                 textAlign="left"
+               />
+               <br />
+               <SplitText
+                 text="Commands."
+                 className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light italic text-mac-accent font-serif leading-[1.05] tracking-tight"
+                 delay={60}
+                 duration={1.2}
+                 ease="power3.out"
+                 splitType="chars"
+                 from={{ opacity: 0, y: 40 }}
+                 to={{ opacity: 1, y: 0 }}
+                 threshold={0.1}
+                 rootMargin="-100px"
+                 textAlign="left"
+                 onLetterAnimationComplete={handleAnimationComplete}
+                 showCallback={true}
+               />
             </h1>
           </div>
           <div className="md:w-1/3 pb-2">
