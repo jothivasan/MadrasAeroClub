@@ -59,7 +59,7 @@ const Navbar = () => {
         </NavLink>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-2 xl:gap-8">
           {navLinks.map((link) => (
             <NavLink
               key={link.name}
@@ -85,7 +85,7 @@ const Navbar = () => {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <NavLink to="/contact" className={clsx(
             "px-7 py-2.5 font-slab text-[1.05rem] font-bold tracking-wider rounded-full transition-all shadow-lg inline-block",
             useDarkText 
@@ -99,7 +99,7 @@ const Navbar = () => {
         {/* Mobile Toggle */}
         <button
           className={clsx(
-            "md:hidden p-2 transition-colors",
+            "lg:hidden p-2 transition-colors",
             useDarkText ? "text-mac-primary" : "text-white"
           )}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -111,7 +111,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div 
         className={clsx(
-          "md:hidden absolute top-full left-0 w-full transition-all duration-300 overflow-hidden shadow-lg",
+          "lg:hidden absolute top-full left-0 w-full transition-all duration-300 overflow-hidden shadow-lg",
           mobileMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0",
           useDarkText ? "bg-white border-b border-mac-border" : "bg-mac-primary border-b border-white/10"
         )}
