@@ -3,7 +3,7 @@ import SplitText from "../components/SplitText";
 import { Wrench, Navigation, Lightbulb, Hexagon } from "lucide-react";
 
 const handleAnimationComplete = () => {
-  console.log('All letters have animated!');
+  console.log("All letters have animated!");
 };
 
 const Programs = () => {
@@ -16,56 +16,58 @@ const Programs = () => {
         <div className="absolute top-0 right-[20%] md:right-[30%] w-[1px] h-full bg-mac-border/60 pointer-events-none"></div>
         <div className="absolute top-[50%] left-0 w-full h-[1px] bg-mac-border/30 pointer-events-none"></div>
 
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between gap-16 relative z-10"
         >
           <div className="md:w-2/3 md:pr-12">
-            <span className="text-mac-accent font-sans font-semibold tracking-[0.2em] uppercase text-xs mb-8 block">
-               Educational Programs
+            <span className="text-mac-accent font-sans font-semibold tracking-[0.2em] uppercase text-sm mb-8 block">
+              Educational Programs
             </span>
             <h1 className="mb-8">
-               <SplitText
-                 text="Elevate Your "
-                 className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light text-mac-primary leading-[1.05] tracking-tight"
-                 delay={60}
-                 duration={1.2}
-                 ease="power3.out"
-                 splitType="chars"
-                 from={{ opacity: 0, y: 40 }}
-                 to={{ opacity: 1, y: 0 }}
-                 threshold={0.1}
-                 rootMargin="-100px"
-                 textAlign="left"
-               />
-               <br />
-               <SplitText
-                 text="Expertise."
-                 className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light italic text-mac-accent font-serif leading-[1.05] tracking-tight"
-                 delay={60}
-                 duration={1.2}
-                 ease="power3.out"
-                 splitType="chars"
-                 from={{ opacity: 0, y: 40 }}
-                 to={{ opacity: 1, y: 0 }}
-                 threshold={0.1}
-                 rootMargin="-100px"
-                 textAlign="left"
-                 onLetterAnimationComplete={handleAnimationComplete}
-                 showCallback={true}
-               />
+              <SplitText
+                text="Elevate Your "
+                className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light text-mac-primary leading-[1.05] tracking-tight"
+                delay={60}
+                duration={1.2}
+                ease="power3.out"
+                splitType="chars"
+                from={{ opacity: 0, y: 40 }}
+                to={{ opacity: 1, y: 0 }}
+                threshold={0.1}
+                rootMargin="-100px"
+                textAlign="left"
+              />
+              <br />
+              <SplitText
+                text="Expertise."
+                className="text-6xl md:text-8xl lg:text-[7.5rem] font-display font-light italic text-mac-accent font-serif leading-[1.05] tracking-tight"
+                delay={60}
+                duration={1.2}
+                ease="power3.out"
+                splitType="chars"
+                from={{ opacity: 0, y: 40 }}
+                to={{ opacity: 1, y: 0 }}
+                threshold={0.1}
+                rootMargin="-100px"
+                textAlign="left"
+                onLetterAnimationComplete={handleAnimationComplete}
+                showCallback={true}
+              />
             </h1>
           </div>
           <div className="md:w-1/3 pb-2">
             <div className="w-12 h-[2px] bg-mac-accent mb-8"></div>
             <p className="text-xl text-mac-muted font-sans font-light leading-relaxed">
-               Our programs are meticulously structured to take you from foundational aerodynamic theory to uncompromising professional execution.
+              Our programs are meticulously structured to take you from
+              foundational aerodynamic theory to uncompromising professional
+              execution.
             </p>
           </div>
         </motion.div>
-        
+
         {/* Minimalist decorative element */}
         <div className="absolute bottom-16 right-6 md:right-12 text-[10px] font-sans tracking-[0.3em] text-mac-muted uppercase rotate-90 origin-bottom-right pointer-events-none">
           MAC — IDX: PRG
@@ -74,7 +76,6 @@ const Programs = () => {
 
       {/* Programs List */}
       <section className="px-6 md:px-12 max-w-7xl mx-auto space-y-16 mt-16">
-        
         {/* Program 1 */}
         <div className="bg-white rounded-3xl border border-mac-border shadow-sm overflow-hidden flex flex-col lg:flex-row">
           <div className="lg:w-2/5 bg-mac-surfaceDark/30 p-12 flex items-center justify-center border-b lg:border-b-0 lg:border-r border-mac-border relative overflow-hidden">
@@ -89,7 +90,9 @@ const Programs = () => {
               Aero Modelling Architecture
             </h2>
             <p className="text-mac-muted mb-8 leading-relaxed font-sans">
-              Deconstruct the physics of flight by engineering tangible models from absolute scratch. Learn structural stability, RC systems integration, and practical aerodynamics.
+              Deconstruct the physics of flight by engineering tangible models
+              from absolute scratch. Learn structural stability, RC systems
+              integration, and practical aerodynamics.
             </p>
 
             <h4 className="font-semibold text-mac-primary mb-4 uppercase text-xs font-sans tracking-wider">
@@ -135,7 +138,9 @@ const Programs = () => {
               UAV Pilot Operations
             </h2>
             <p className="text-mac-muted mb-8 leading-relaxed font-sans">
-              Master autonomous and manual drone operation. Execute mission-planning logic for uncompromising commercial and industrial applications.
+              Master autonomous and manual drone operation. Execute
+              mission-planning logic for uncompromising commercial and
+              industrial applications.
             </p>
 
             <h4 className="font-semibold text-mac-primary mb-4 uppercase text-xs font-sans tracking-wider">
@@ -177,7 +182,9 @@ const Programs = () => {
               Innovation & Robotics Incubator
             </h2>
             <p className="text-mac-muted mb-8 leading-relaxed font-sans">
-              For absolute boundary pushing. A dedicated laboratory track designed to forge the future of aerospace hardware and autonomous logic controllers.
+              For absolute boundary pushing. A dedicated laboratory track
+              designed to forge the future of aerospace hardware and autonomous
+              logic controllers.
             </p>
 
             <h4 className="font-semibold text-mac-primary mb-4 uppercase text-xs font-sans tracking-wider">
@@ -203,7 +210,6 @@ const Programs = () => {
             </button>
           </div>
         </div>
-
       </section>
     </div>
   );

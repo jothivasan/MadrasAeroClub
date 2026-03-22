@@ -13,6 +13,9 @@ import {
 import { Link } from "react-router-dom";
 import { useRef } from "react";
 import SplitText from "../components/SplitText";
+import theoryAppImg from "../assets/home_theory_application.png";
+import learningDoingImg from "../assets/home_learning_doing.png";
+import curiosityInnovImg from "../assets/home_curiosity_innovation.png";
 
 const Home = () => {
   const containerRef = useRef(null);
@@ -161,7 +164,7 @@ const Home = () => {
           <div className="max-w-2xl">
             <div className="flex items-center gap-4 mb-6 md:mb-8">
               <div className="w-8 h-[1px] bg-mac-accent"></div>
-              <span className="font-mono text-[10px] tracking-[0.3em] text-mac-accent uppercase font-bold">
+              <span className="font-mono text-sm tracking-[0.3em] text-mac-accent uppercase font-bold">
                 The Directive
               </span>
             </div>
@@ -200,9 +203,11 @@ const Home = () => {
             className="group relative bg-[#FAFAFA] border border-mac-border/40 hover:bg-white transition-colors duration-500 overflow-hidden flex flex-col shadow-sm hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)]"
           >
             <div className="w-full h-56 md:h-64 overflow-hidden relative transition-all duration-700 bg-mac-accent/5 border-b border-mac-border/20 flex items-center justify-center">
-              <div className="font-mono text-[10px] tracking-[0.2em] text-mac-accent/40 uppercase relative z-10 transition-transform duration-700 group-hover:scale-110">
-                [ Image Placeholder 01 ]
-              </div>
+              <img
+                src={theoryAppImg}
+                alt="Theory and Application"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+              />
             </div>
             <div className="p-8 pb-10 flex-grow relative">
               <h3 className="text-2xl font-display font-bold text-mac-primary mb-4 leading-tight relative mt-2">
@@ -231,9 +236,11 @@ const Home = () => {
             className="group relative bg-[#FAFAFA] border border-mac-border/40 hover:bg-white transition-colors duration-500 overflow-hidden flex flex-col shadow-sm hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)]"
           >
             <div className="w-full h-56 md:h-64 overflow-hidden relative transition-all duration-700 bg-mac-accent/5 border-b border-mac-border/20 flex items-center justify-center">
-              <div className="font-mono text-[10px] tracking-[0.2em] text-mac-accent/40 uppercase relative z-10 transition-transform duration-700 group-hover:scale-110">
-                [ Image Placeholder 02 ]
-              </div>
+              <img
+                src={learningDoingImg}
+                alt="Learning and Doing"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+              />
             </div>
             <div className="p-8 pb-10 flex-grow relative">
               <h3 className="text-2xl font-display font-bold text-mac-primary mb-4 leading-tight relative mt-2">
@@ -262,9 +269,11 @@ const Home = () => {
             className="group relative bg-[#FAFAFA] border border-mac-border/40 hover:bg-white transition-colors duration-500 overflow-hidden flex flex-col shadow-sm hover:shadow-[0_20px_40px_rgba(0,0,0,0.04)]"
           >
             <div className="w-full h-56 md:h-64 overflow-hidden relative transition-all duration-700 bg-mac-accent/5 border-b border-mac-border/20 flex items-center justify-center">
-              <div className="font-mono text-[10px] tracking-[0.2em] text-mac-accent/40 uppercase relative z-10 transition-transform duration-700 group-hover:scale-110">
-                [ Image Placeholder 03 ]
-              </div>
+              <img
+                src={curiosityInnovImg}
+                alt="Curiosity and Innovation"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+              />
             </div>
             <div className="p-8 pb-10 flex-grow relative">
               <h3 className="text-2xl font-display font-bold text-mac-primary mb-4 leading-tight relative mt-2">

@@ -30,7 +30,7 @@ const Services = () => {
           className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between gap-16 relative z-10"
         >
           <div className="md:w-2/3 md:pr-12">
-            <span className="text-mac-accent font-sans font-semibold tracking-[0.2em] uppercase text-xs mb-8 block">
+            <span className="text-mac-accent font-sans font-semibold tracking-[0.2em] uppercase text-sm mb-8 block">
               Commercial Solutions
             </span>
             <h1 className="mb-8">
@@ -183,7 +183,7 @@ const Services = () => {
       {/* Infinite Marquee Section */}
       <div className="w-full pt-16 md:pt-10 relative z-20 flex flex-col md:pb-32 pb-20">
         <div className="w-full text-center mb-12 px-6">
-          <span className="text-mac-accent font-mono text-[10px] tracking-[0.3em] uppercase font-bold mb-4 block">
+          <span className="text-mac-accent font-mono text-sm tracking-[0.3em] uppercase font-bold mb-4 block">
             Capabilities
           </span>
           <h2 className="text-4xl md:text-5xl font-display font-bold text-mac-primary tracking-tight">

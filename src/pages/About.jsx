@@ -30,7 +30,7 @@ const About = () => {
           className="w-full max-w-7xl mx-auto flex flex-col md:flex-row items-end justify-between gap-16 relative z-10"
         >
           <div className="md:w-2/3 md:pr-12">
-            <span className="text-mac-accent font-sans font-semibold tracking-[0.2em] uppercase text-xs mb-8 block">
+            <span className="text-mac-accent font-sans font-semibold tracking-[0.2em] uppercase text-sm mb-8 block">
               Our Heritage
             </span>
             <h1 className="mb-8">
@@ -95,7 +95,7 @@ const About = () => {
           <div className="lg:col-span-4 flex flex-col justify-between">
             <div className="flex items-center gap-4 mb-8">
               <div className="w-8 h-[1px] bg-mac-accent"></div>
-              <span className="font-mono text-[10px] tracking-[0.3em] text-mac-accent uppercase font-bold">
+              <span className="font-mono text-sm tracking-[0.3em] text-mac-accent uppercase font-bold">
                 Who Wer Are
               </span>
             </div>
@@ -108,354 +108,6 @@ const About = () => {
               <div className="absolute left-1/2 top-[5%] h-[90%] w-[1px] bg-mac-border/20"></div>
 
               {/* Drone Design */}
-              <div className="relative w-full h-full flex items-center justify-center">
-                <motion.div
-                  animate={{ y: [-5, 5, -5] }}
-                  transition={{
-                    duration: 6,
-                    ease: "easeInOut",
-                    repeat: Infinity,
-                  }}
-                  className="absolute z-10"
-                >
-                  <svg
-                    viewBox="-30 -30 160 160"
-                    className="w-[240px] h-[240px] text-mac-primary stroke-current"
-                    fill="none"
-                    strokeWidth="0.8"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    {/* Arms */}
-                    <path d="M 42 38 L 18 30" strokeWidth="1.5" opacity="0.8" />
-                    <path d="M 58 38 L 82 30" strokeWidth="1.5" opacity="0.8" />
-                    <path d="M 43 62 L 18 80" strokeWidth="1.5" opacity="0.8" />
-                    <path d="M 57 62 L 82 80" strokeWidth="1.5" opacity="0.8" />
-
-                    {/* Front Gimbal Camera */}
-                    <path
-                      d="M 45 18 L 55 18 C 56 18, 56 22, 54 22 L 46 22 C 44 22, 44 18, 45 18 Z"
-                      fill="currentColor"
-                      opacity="0.9"
-                    />
-                    <circle
-                      cx="50"
-                      cy="20"
-                      r="1.5"
-                      fill="white"
-                      opacity="0.5"
-                    />
-                    <rect
-                      x="47"
-                      y="22"
-                      width="6"
-                      height="3"
-                      fill="currentColor"
-                      opacity="0.8"
-                    />
-
-                    {/* Main Drone Body Shell */}
-                    <path
-                      d="M 43 25 
-                             L 57 25 
-                             C 60 25, 61 27, 61 31 
-                             C 60 36, 58 43, 57 63 
-                             C 56.5 71, 55 75, 50 75 
-                             C 45 75, 43.5 71, 43 63 
-                             C 42 43, 40 36, 39 31 
-                             C 39 27, 40 25, 43 25 Z"
-                      fill="white"
-                      strokeWidth="1.2"
-                    />
-
-                    {/* Internal Canopy Plate (Sculpted top cover) */}
-                    <path
-                      d="M 44.5 27 
-                             L 55.5 27 
-                             C 57 27, 57.5 30, 57 33 
-                             C 55 41, 53.5 53, 52.5 63 
-                             C 52 69, 51 71, 50 71 
-                             C 49 71, 48 69, 47.5 63 
-                             C 46.5 53, 45 41, 43 33 
-                             C 42.5 30, 43 27, 44.5 27 Z"
-                      fill="none"
-                      opacity="0.5"
-                      strokeWidth="0.8"
-                    />
-
-                    {/* Upper Nose Air Scoop */}
-                    <rect
-                      x="46"
-                      y="30"
-                      width="8"
-                      height="1.5"
-                      rx="0.5"
-                      fill="currentColor"
-                      opacity="0.6"
-                    />
-
-                    {/* Front Corner Obstacle Sensors */}
-                    <path
-                      d="M 43 25 L 46 25 L 44 29 Z"
-                      fill="currentColor"
-                      opacity="0.8"
-                    />
-                    <path
-                      d="M 57 25 L 54 25 L 56 29 Z"
-                      fill="currentColor"
-                      opacity="0.8"
-                    />
-
-                    {/* Rear Sensor Block & Vents */}
-                    <path
-                      d="M 46 65 L 54 65 L 52 73 L 48 73 Z"
-                      fill="currentColor"
-                      opacity="0.1"
-                    />
-                    <circle
-                      cx="47"
-                      cy="70"
-                      r="1.5"
-                      fill="currentColor"
-                      opacity="0.8"
-                    />
-                    <circle
-                      cx="53"
-                      cy="70"
-                      r="1.5"
-                      fill="currentColor"
-                      opacity="0.8"
-                    />
-
-                    {/* Minimal Core Logo abstraction */}
-                    <rect
-                      x="49"
-                      y="52"
-                      width="2"
-                      height="4"
-                      fill="currentColor"
-                      opacity="0.3"
-                      rx="0.5"
-                    />
-
-                    {/* Propeller Guards */}
-                    <g opacity="0.5" strokeWidth="0.6">
-                      <circle cx="18" cy="30" r="18" />
-                      <circle cx="82" cy="30" r="18" />
-                      <circle cx="18" cy="80" r="18" />
-                      <circle cx="82" cy="80" r="18" />
-
-                      {/* Struts */}
-                      <path
-                        d="M 18 30 L 18 12 M 18 30 L 0 30"
-                        opacity="0.4"
-                        strokeDasharray="1 2"
-                      />
-                      <path
-                        d="M 82 30 L 82 12 M 82 30 L 100 30"
-                        opacity="0.4"
-                        strokeDasharray="1 2"
-                      />
-                      <path
-                        d="M 18 80 L 18 98 M 18 80 L 0 80"
-                        opacity="0.4"
-                        strokeDasharray="1 2"
-                      />
-                      <path
-                        d="M 82 80 L 82 98 M 82 80 L 100 80"
-                        opacity="0.4"
-                        strokeDasharray="1 2"
-                      />
-                    </g>
-
-                    {/* Motor Mounts */}
-                    <circle
-                      cx="18"
-                      cy="30"
-                      r="3.5"
-                      fill="currentColor"
-                      opacity="0.9"
-                    />
-                    <circle cx="18" cy="30" r="1.5" fill="white" />
-
-                    <circle
-                      cx="82"
-                      cy="30"
-                      r="3.5"
-                      fill="currentColor"
-                      opacity="0.9"
-                    />
-                    <circle cx="82" cy="30" r="1.5" fill="white" />
-
-                    <circle
-                      cx="18"
-                      cy="80"
-                      r="3.5"
-                      fill="currentColor"
-                      opacity="0.9"
-                    />
-                    <circle cx="18" cy="80" r="1.5" fill="white" />
-
-                    <circle
-                      cx="82"
-                      cy="80"
-                      r="3.5"
-                      fill="currentColor"
-                      opacity="0.9"
-                    />
-                    <circle cx="82" cy="80" r="1.5" fill="white" />
-                    {/* Propellers */}
-                    <g
-                      style={{ transformOrigin: "18px 30px" }}
-                      className="animate-[spin_0.8s_linear_infinite]"
-                    >
-                      <path
-                        d="M 18 30 Q 15 21, 18 12 Q 21 21, 18 30"
-                        fill="currentColor"
-                        opacity="0.1"
-                      />
-                      <path
-                        d="M 18 30 Q 15 39, 18 48 Q 21 39, 18 30"
-                        fill="currentColor"
-                        opacity="0.1"
-                      />
-                      <path
-                        d="M 18 30 Q 16 21, 18 12 Q 20 21, 18 30"
-                        fill="currentColor"
-                        opacity="0.8"
-                      />
-                      <path
-                        d="M 18 30 Q 16 39, 18 48 Q 20 39, 18 30"
-                        fill="currentColor"
-                        opacity="0.8"
-                      />
-                      <circle
-                        cx="18"
-                        cy="13"
-                        r="1.5"
-                        className="fill-mac-accent"
-                      />
-                      <circle
-                        cx="18"
-                        cy="47"
-                        r="1.5"
-                        className="fill-mac-accent"
-                      />
-                    </g>
-                    <g
-                      style={{ transformOrigin: "82px 30px" }}
-                      className="animate-[spin_0.8s_linear_infinite_reverse]"
-                    >
-                      <path
-                        d="M 82 30 Q 79 21, 82 12 Q 85 21, 82 30"
-                        fill="currentColor"
-                        opacity="0.1"
-                      />
-                      <path
-                        d="M 82 30 Q 79 39, 82 48 Q 85 39, 82 30"
-                        fill="currentColor"
-                        opacity="0.1"
-                      />
-                      <path
-                        d="M 82 30 Q 80 21, 82 12 Q 84 21, 82 30"
-                        fill="currentColor"
-                        opacity="0.8"
-                      />
-                      <path
-                        d="M 82 30 Q 80 39, 82 48 Q 84 39, 82 30"
-                        fill="currentColor"
-                        opacity="0.8"
-                      />
-                      <circle
-                        cx="82"
-                        cy="13"
-                        r="1.5"
-                        className="fill-mac-accent"
-                      />
-                      <circle
-                        cx="82"
-                        cy="47"
-                        r="1.5"
-                        className="fill-mac-accent"
-                      />
-                    </g>
-                    <g
-                      style={{ transformOrigin: "18px 80px" }}
-                      className="animate-[spin_0.8s_linear_infinite_reverse]"
-                    >
-                      <path
-                        d="M 18 80 Q 15 71, 18 62 Q 21 71, 18 80"
-                        fill="currentColor"
-                        opacity="0.1"
-                      />
-                      <path
-                        d="M 18 80 Q 15 89, 18 98 Q 21 89, 18 80"
-                        fill="currentColor"
-                        opacity="0.1"
-                      />
-                      <path
-                        d="M 18 80 Q 16 71, 18 62 Q 20 71, 18 80"
-                        fill="currentColor"
-                        opacity="0.8"
-                      />
-                      <path
-                        d="M 18 80 Q 16 89, 18 98 Q 20 89, 18 80"
-                        fill="currentColor"
-                        opacity="0.8"
-                      />
-                      <circle
-                        cx="18"
-                        cy="63"
-                        r="1.5"
-                        className="fill-mac-accent"
-                      />
-                      <circle
-                        cx="18"
-                        cy="97"
-                        r="1.5"
-                        className="fill-mac-accent"
-                      />
-                    </g>
-                    <g
-                      style={{ transformOrigin: "82px 80px" }}
-                      className="animate-[spin_0.8s_linear_infinite]"
-                    >
-                      <path
-                        d="M 82 80 Q 79 71, 82 62 Q 85 71, 82 80"
-                        fill="currentColor"
-                        opacity="0.1"
-                      />
-                      <path
-                        d="M 82 80 Q 79 89, 82 98 Q 85 89, 82 80"
-                        fill="currentColor"
-                        opacity="0.1"
-                      />
-                      <path
-                        d="M 82 80 Q 80 71, 82 62 Q 84 71, 82 80"
-                        fill="currentColor"
-                        opacity="0.8"
-                      />
-                      <path
-                        d="M 82 80 Q 80 89, 82 98 Q 84 89, 82 80"
-                        fill="currentColor"
-                        opacity="0.8"
-                      />
-                      <circle
-                        cx="82"
-                        cy="63"
-                        r="1.5"
-                        className="fill-mac-accent"
-                      />
-                      <circle
-                        cx="82"
-                        cy="97"
-                        r="1.5"
-                        className="fill-mac-accent"
-                      />
-                    </g>
-                  </svg>
-                </motion.div>
-              </div>
             </div>
           </div>
 
@@ -503,7 +155,7 @@ const About = () => {
           <div className="lg:col-span-5 lg:sticky lg:top-52 h-fit">
             <div className="flex items-center gap-3 mb-8 text-mac-accent">
               <Layers size={16} strokeWidth={2} />
-              <span className="font-mono text-[10px] tracking-[0.3em] uppercase font-bold">
+              <span className="font-mono text-sm tracking-[0.3em] uppercase font-bold">
                 What We Do
               </span>
             </div>
@@ -616,7 +268,7 @@ const About = () => {
           >
             <div className="flex items-center gap-3 mb-8 text-mac-accent">
               <Target size={16} strokeWidth={2} />
-              <span className="font-mono text-[10px] tracking-[0.3em] uppercase font-bold">
+              <span className="font-mono text-sm tracking-[0.3em] uppercase font-bold">
                 Our Vision
               </span>
             </div>
@@ -636,7 +288,7 @@ const About = () => {
           >
             <div className="flex items-center gap-3 mb-8 text-mac-accent">
               <Crosshair size={16} strokeWidth={2} />
-              <span className="font-mono text-[10px] tracking-[0.3em] uppercase font-bold">
+              <span className="font-mono text-sm tracking-[0.3em] uppercase font-bold">
                 Our Mission
               </span>
             </div>
