@@ -6,6 +6,8 @@ Madras Aero Club is a modern aerospace and drone technology website built to int
 
 **Project date:** March 23, 2026
 
+**Status:** Public · MIT Licensed
+
 ## Highlights
 
 - Immersive landing page focused on aerospace learning and innovation
@@ -49,8 +51,8 @@ Madras Aero Club is a modern aerospace and drone technology website built to int
 ### Installation
 
 ```bash
-git clone https://github.com/jothivasan/MadrasAreoClub.git
-cd MadrasAreoClub
+git clone https://github.com/jothivasan/MadrasAeroClub.git
+cd MadrasAeroClub
 npm install
 ```
 
@@ -94,7 +96,7 @@ The interface uses a refined aerospace editorial style: generous white space, ar
 
 ## License
 
-This project is a private project for Madras Aero Club. Contact the project owner before reusing or redistributing the source code or visual assets.
+This project is available under the [MIT License](LICENSE). You are welcome to study, adapt, and reuse the source code in accordance with the license terms.
 
 ---
 
